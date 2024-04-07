@@ -11,9 +11,8 @@
 ```
 
 Below code doesn't work because its the relative path. Therefore, it's recommended to use absolute paths or paths relative to the /static directory when referencing static resources in Thymeleaf templates.
-```
 
-```     
+```
 <img src="../static/images/slow-down.png" th:if="${speed > 60}" width="200">
-<img src="../static/images/speed-limit.png" th:unless="${speed > 60}" width="200"> -->
+<img src="../static/images/speed-limit.png" th:unless="${speed > 60}" width="200"> 
 ```
