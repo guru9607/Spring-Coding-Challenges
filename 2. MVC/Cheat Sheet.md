@@ -37,6 +37,17 @@ This cheat sheet contains important takeaways from section two.
     }
 ```
 ## Thymeleaf Expressions
+---
+Certainly! Think of XML namespaces like last names in a directory. When two people share the same first name, you use their last names to distinguish them. Similarly, XML namespaces help distinguish elements and attributes with the same name but coming from different sources.
+
+```xml
+xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+```
+- The first line sets the default namespace for elements. It's like saying, "All elements without a specific last name belong to the 'http://maven.apache.org/POM/4.0.0' family."
+- The second line declares a namespace alias "xsi" for attributes and elements specifically related to XML Schema Instance. It's like assigning a nickname "xsi" to a specific family, so you can easily identify them.
+
+---
 
 - Variable Expression `${...}`: executes on a model attribute in some way.
 - Selection Expression `*{field}`: selects a field from a previously bound object.
